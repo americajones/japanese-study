@@ -266,15 +266,42 @@ background-color: #0d1425;
   color: #add4d1;
 }
 
-.Flashcards {
+.kanaFlashcards:nth-child(even) {
+    background-color: #1a4b61;
+}
+.kanaFlashcards {
   text-align: center;
   position: relative;
   background-color: #236671;
-  padding: 2em 1em;
+  padding: 1em .5em;
   margin-top: .5em;
   margin-right: .5em;
-  width: 175px;
+  width: 144px;
   border-radius: 4px;
+}
+.Flashcards h1 {
+    color: white;
+}
+.Flashcards h2 {
+    opacity: 50%;
+    padding-bottom: 1em;
+}
+.Flashcards {
+    text-align: center;
+    position: relative;
+    background-color: #236671;
+    padding: 2em 1em;
+    padding-bottom: .5em;
+    margin-top: 1em;
+    margin-right: 1em;
+    width: 166px;
+    border-radius: 4px;
+}
+.Flashcards:nth-child(3n+2) {
+    background-color: #307d91;
+}
+.Flashcards:nth-child(3n+3) {
+    background-color: #1a4b61;
 }
 
 .center {

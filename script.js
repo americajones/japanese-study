@@ -50,6 +50,7 @@ function clearAll() {
     secondaryCharText.textContent = "";
     pageHeader.textContent = "";
     pageHeader.textContent = "日本語を勉強しましょう";
+    quizStudyBox.classList.remove('hidden');
 }
 function makeButtons(swapEvent, skipEvent) {
     removeAllChildren(buttBox);
@@ -132,12 +133,81 @@ function loadGenkiWords() {
 
 function loadKanaFlashcards() {
     clearAll();
+    quizStudyBox.classList.add('hidden');
+    loadKana();
+    hiraganaArray.forEach((kana, index) => {
+        let mainKanji = kana;
+        let translation = meaningsArray[index];
+        let katakana = katakanaArray[index];
+        let kanjiBox = document.createElement('div');
+        let wordBox = document.createElement('div');
+        let infoBox = document.createElement('div');
+        let kanjiBoxTit = document.createElement('h1');
+        let kanjiBoxTit2 = document.createElement('h1');
+        kanjiBoxTit.textContent = mainKanji;
+        kanjiBoxTit2.textContent = katakana;
+        kanjiBox.classList.add('kanaFlashcards');
+        infoBox.classList.add('infoBox');
+        infoBox.classList.add('semifaded');
+        infoBox.classList.add('opacity');
+        wordBox.append(translation);
+        infoBox.append(wordBox);
+        kanjiBox.append(kanjiBoxTit, kanjiBoxTit2);
+        kanjiBox.append(infoBox);
+        // kanjiBox.addEventListener('click', toggleEnglish);
+        flashBox.append(kanjiBox);
+        // function toggleEnglish() {
+        //     infoBox.classList.toggle('opacity');
+        // }
+    });
 }
 function loadBasicWordFlashcards() {
     clearAll();
+    quizStudyBox.classList.add('hidden');
+    loadNouns();
+    wordsArray.forEach((word, index) => {
+        let mainKanji = word;
+        let translation = meaningsArray[index];
+        let kana = kanaArray[index];
+        let kanjiBox = document.createElement('div');
+        let wordBox = document.createElement('div');
+        let infoBox = document.createElement('div');
+        let kanjiBoxTit = document.createElement('h1');
+        let kanjiBoxTit2 = document.createElement('h2');
+        kanjiBoxTit.textContent = mainKanji;
+        kanjiBoxTit2.textContent = kana;
+        kanjiBox.classList.add('Flashcards');
+        infoBox.classList.add('infoBox');
+        wordBox.append(translation);
+        infoBox.append(wordBox);
+        kanjiBox.append(kanjiBoxTit, kanjiBoxTit2);
+        kanjiBox.append(infoBox);
+        flashBox.append(kanjiBox);
+    });
 }
 function loadGenkiFlashcards() {
     clearAll();
+    quizStudyBox.classList.add('hidden');
+    loadGenkiWords();
+    wordsArray.forEach((word, index) => {
+        let mainKanji = word;
+        let translation = meaningsArray[index];
+        let kana = kanaArray[index];
+        let kanjiBox = document.createElement('div');
+        let wordBox = document.createElement('div');
+        let infoBox = document.createElement('div');
+        let kanjiBoxTit = document.createElement('h1');
+        let kanjiBoxTit2 = document.createElement('h2');
+        kanjiBoxTit.textContent = mainKanji;
+        kanjiBoxTit2.textContent = kana;
+        kanjiBox.classList.add('Flashcards');
+        infoBox.classList.add('infoBox');
+        wordBox.append(translation);
+        infoBox.append(wordBox);
+        kanjiBox.append(kanjiBoxTit, kanjiBoxTit2);
+        kanjiBox.append(infoBox);
+        flashBox.append(kanjiBox);
+    });
 }
 function loadHiraganaQuiz() {
     clearAll();
