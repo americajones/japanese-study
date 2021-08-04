@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanji Study</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <script type="text/javascript" src="nihongo.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu header">
+            <li class="title">日本語を勉強しましょう!</li>
+            <!-- <li class="item has-submenu">
+                <a tabindex="0">Flashcards</a>
+                <ul class="submenu">
+                    <li class="subitem final"><a href="#" onclick="loadKanaFlashcards()">Kana</a>
+                    </li>
+                    <li class="subitem final"><a href="#" onclick="loadBasicWordFlashcards()">Words</a>
+                    </li>
+                    <li class="subitem final"><a href="#" onclick="loadGenkiFlashcards()">Genki words</a></li>
+                </ul>
+            </li> -->
+            <li class="item has-submenu">
+                <a tabindex="0">Kana Quiz</a>
+                <ul class="submenu">
+                    <li class="subitem final"><a href="#" onclick="loadHiraganaQuiz()">Hiragana</a>
+                    </li>
+                    <li class="subitem final"><a href="#" onclick="loadKatakanaQuiz()">Katakana</a></li>
+                    <li class="subitem final"><a href="#" onclick="loadKanaQuiz()">Both Kana</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a tabindex="0">Basic Words</a>
+                <ul class="submenu">
+                    <li class="subitem final"><a href="#" onclick="loadWordsFamiliQuiz()">Familiarity</a></li>
+                    <li class="subitem final"><a href="#" onclick="loadWordsMeaningsQuiz()">Meanings</a></li>
+                    <li class="subitem final"><a href="#" onclick="loadWordsReadingQuiz()">Reading</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a tabindex="0">Genki Words</a>
+                <ul class="submenu">
+                    <li class="subitem final"><a href="#" onclick="loadGenkiFamiliQuiz()">Familiarity</a></li>
+                    <li class="subitem final"><a href="#" onclick="loadGenkiMeaningsQuiz()">Meanings</a></li>
+                    <li class="subitem final"><a href="#" onclick="loadGenkiReadingQuiz()">Reading</a></li>
+                </ul>
+            </li>
+            <!-- <li class="item final"><a href="#" onclick="getGrammar()">Grammar</a></li> -->
+            <!-- <li class="item final"><a href="#" onclick="getSentences()">Sentences</a></li> -->
+            <li class="toggle">
+                <h2><a class="cursive topdrop" href="#">Study ▼</a></h2>
+            </li>
+        </ul>
+    </nav>
+    <div id="main-box">
+        <div id="quiz-practice">
+            <div>
+                <h1 id="main-char"></h1>
+                <h2 id="optional-char" class="semifaded"></h2>
+                <div id='writeBox' class="hidden">
+                    <div id="character-target-div"></div>
+                    <div class="inputBox">
+                        <label for="char">Type this:</label>
+                        <input type="text" id="char" name="char" active>
+                        <input id="subButt" type="submit" value="Submit">
+                        <input id="skipButt" type="submit" value="Skip">
+                        <div class="writingButtBox"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="answers">
+                <img src="./Capture000.PNG" alt="small part of Hakone by Utagawa Hiroshige, ca. 1833-34">
+            </div>
+
+            <div class="bottom-buttons"></div>
+        </div>
+        <div class="flashBox"></div>
+        <div class="flashBox2"></div>
+        <div class="flashBox3"></div>
+        <div class="sentenceBox"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
