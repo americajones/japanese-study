@@ -79,7 +79,6 @@ function handleAnswerClick(timeoutFunction, event, time) {
     if (selectedAnswer === trueAnswer) {
         secretMessage.textContent = '. * nice! * .';
         mainCharText.append(" = ", selectedAnswer);
-        console.log('. * nice! * .');
         setTimeout(() => {
             timeoutFunction();
             secretMessage.textContent = '';
@@ -129,8 +128,6 @@ function loadGenkiWords() {
         lessonArray.push(word.Lesson);
     });
 }
-// quiz functions
-
 function loadKanaFlashcards() {
     clearAll();
     quizStudyBox.classList.add('hidden');
@@ -209,6 +206,7 @@ function loadGenkiFlashcards() {
         flashBox.append(kanjiBox);
     });
 }
+// quiz functions
 function loadHiraganaQuiz() {
     clearAll();
     loadKana();
