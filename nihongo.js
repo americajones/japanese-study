@@ -818,61 +818,231 @@ nouns = {
         "meaning": "potato",
         "category": "plant"
     },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    //     "category": "noun"
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    //     "category": "noun"
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    //     "category": "noun"
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    //     "category": "noun"
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    //     "category": "noun"
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    //     "category": "noun"
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    //     "category": "noun"
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    //     "category": "noun"
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    //     "category": "noun"
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    //     "category": "noun"
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    //     "category": "noun"
-    // },
+    "米": {
+        "kana": "こめ",
+        "meaning": "uncooked rice",
+        "category": "noun"
+    },
+    "麦": {
+        "kana": "むぎ",
+        "meaning": "wheat, barley, oats",
+        "category": "noun"
+    },
+    "野菜": {
+        "kana": "やさい",
+        "meaning": "vegetable",
+        "category": "noun"
+    },
+    "豆": {
+        "kana": "まめ",
+        "meaning": "beans, peas",
+        "category": "noun"
+    },
+    "大根": {
+        "kana": "だいこん",
+        "meaning": "japanese white radish",
+        "category": "noun"
+    },
+    "人参": {
+        "kana": "にんじん",
+        "meaning": "carrot",
+        "category": "noun"
+    },
+    "林檎": {
+        "kana": "リンゴ",
+        "meaning": "apple",
+        "category": "noun"
+    },
+    "蜜柑": {
+        "kana": "ミカン",
+        "meaning": "mandarin orange",
+        "category": "noun"
+    },
+    "甘蕉": {
+        "kana": "バナナ、かんしょう",
+        "meaning": "banana",
+        "category": "noun"
+    },
+    "梨": {
+        "kana": "ナシ",
+        "meaning": "pear",
+        "category": "noun"
+    },
+    "桃": {
+        "kana": "モモ",
+        "meaning": "peach",
+        "category": "noun"
+    },
+    "西瓜": {
+        "kana": "スイカ",
+        "meaning": "watermelon",
+        "category": "noun"
+    },
+    "食べ物": {
+        "kana": "たべもの",
+        "meaning": "food",
+        "category": "noun"
+    },
+    "朝食": {
+        "kana": "ちょうしょく",
+        "meaning": "breakfast",
+        "category": "noun"
+    },
+    "昼御飯": {
+        "kana": "ひるごはん",
+        "meaning": "lunch",
+        "category": "noun"
+    },
+    "晩御飯": {
+        "kana": "ばんごはん",
+        "meaning": "dinner",
+        "category": "noun"
+    },
+    "御飯": {
+        "kana": "ごはん",
+        "meaning": "cooked rice or meal",
+        "category": "noun"
+    },
+    "味噌": {
+        "kana": "みそ",
+        "meaning": "miso",
+        "category": "noun"
+    },
+    "料理": {
+        "kana": "りょうり",
+        "meaning": "cooking",
+        "category": "noun"
+    },
+    "間食": {
+        "kana": "おやつ",
+        "meaning": "snack",
+        "category": "noun"
+    },
+    "飲み物": {
+        "kana": "のみもの",
+        "meaning": "drink, beverage",
+        "category": "noun"
+    },
+    "茶": {
+        "kana": "ちゃ",
+        "meaning": "tea",
+        "category": "noun"
+    },
+    "お茶": {
+        "kana": "おちゃ",
+        "meaning": "green tea",
+        "category": "noun"
+    },
+    "珈琲": {
+        "kana": "コーヒー",
+        "meaning": "coffee",
+        "category": "noun"
+    },
+    "牛乳": {
+        "kana": "ぎゅうにゅう",
+        "meaning": "milk",
+        "category": "noun"
+    },
+    "砂糖": {
+        "kana": "さとう",
+        "meaning": "sugar",
+        "category": "noun"
+    },
+    "塩": {
+        "kana": "しお",
+        "meaning": "salt",
+        "category": "noun"
+    },
+    "醤油": {
+        "kana": "しょうゆ",
+        "meaning": "soy sauce",
+        "category": "noun"
+    },
+    "時間": {
+        "kana": "じかん",
+        "meaning": "time",
+        "category": "noun"
+    },
+    "暦": {
+        "kana": "こよみ、カレンダー",
+        "meaning": "calendar",
+        "category": "noun"
+    },
+    "分": {
+        "kana": "ふん",
+        "meaning": "minute",
+        "category": "noun"
+    },
+    "秒": {
+        "kana": "びょう",
+        "meaning": "second",
+        "category": "noun"
+    },
+    "日": {
+        "kana": "ひ、にち",
+        "meaning": "day",
+        "category": "noun"
+    },
+    "月": {
+        "kana": "つき、げつ",
+        "meaning": "month",
+        "category": "noun"
+    },
+    "年": {
+        "kana": "とし、ねん",
+        "meaning": "year",
+        "category": "noun"
+    },
+    "去年": {
+        "kana": "きょねん",
+        "meaning": "last year",
+        "category": "noun"
+    },
+    "今年": {
+        "kana": "ことし",
+        "meaning": "this year",
+        "category": "noun"
+    },
+    "来年": {
+        "kana": "らいねん",
+        "meaning": "next year",
+        "category": "noun"
+    },
+    "昨日": {
+        "kana": "きのう、さくじつ",
+        "meaning": "yesterday",
+        "category": "noun"
+    },
+    "今日": {
+        "kana": "きょう",
+        "meaning": "today",
+        "category": "noun"
+    },
+    "明日": {
+        "kana": "あした",
+        "meaning": "tomorrow",
+        "category": "noun"
+    },
+    "朝": {
+        "kana": "あさ",
+        "meaning": "morning",
+        "category": "noun"
+    },
+    "昼": {
+        "kana": "ひる",
+        "meaning": "afternoon",
+        "category": "noun"
+    },
+    "夕方": {
+        "kana": "ゆうがた",
+        "meaning": "evening",
+        "category": "noun"
+    },
+    "晩": {
+        "kana": "ばん",
+        "meaning": "evening",
+        "category": "noun"
+    },
     // "": {
     //     "kana": "",
     //     "meaning": "",

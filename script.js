@@ -1,5 +1,6 @@
 const quizStudyBox = document.querySelector('#quiz-practice');
 const mainBox = document.querySelector('#main-box');
+const writeBox = document.querySelector('#writeBox');
 const mainCharText = document.querySelector('#main-char');
 const secondaryCharText = document.querySelector('#optional-char');
 const answersBox = document.querySelector('.answers');
@@ -745,6 +746,106 @@ function loadGenkiReadingQuizSwap() {
         newDiv.classList.add('med');
         answersBox.append(newDiv);
     });
+}
+let writingAnswers = "";
+const charTarget = document.querySelector('#character-target-div');
+const wbuttBox = document.querySelector('.writingButtBox');
+const subButt = document.querySelector('#subButt');
+const wskipButt = document.querySelector('#skipButt');
+const charInput = document.querySelector('#char');
+function loadWritingQuiz() {
+    clearAll();
+    loadGenkiWords();
+    removeAllChildren(wbuttBox);
+    charInput.value = "";
+    writeBox.classList.remove('hidden');
+    randoNumber = Math.floor(Math.random() * wordsArray.length);
+    konoKanji = wordsArray[randoNumber];
+    writingAnswers = kanaArray[randoNumber] + " - " + meaningsArray[randoNumber];
+    mainCharText.textContent = konoKanji;
+    mainCharText.classList.remove('cursive');
+    secondaryCharText.textContent = "";
+    let answersArray = [];
+    trueAnswer = wordsArray[randoNumber];
+    answersArray.push(trueAnswer);
+    // charInput.focus();
+    subButt.removeEventListener('click', handleAnswerClick3);
+    subButt.addEventListener('click', handleAnswerClick2);
+    subButt.classList.add('butt')
+    subButt.classList.add('dark')
+    wskipButt.classList.add('butt')
+    wskipButt.classList.add('dark')
+    wskipButt.addEventListener('click', loadWritingQuiz);
+    wskipButt.removeEventListener('click', loadWritingQuiz2);
+
+}
+function handleAnswerClick2() {
+    selectedAnswer = charInput.value;
+    console.log("ANSWER IS: ", selectedAnswer);
+    if (selectedAnswer == trueAnswer) {
+        secretMessage.textContent = '. * nice! * .';
+        mainCharText.append(" = ", selectedAnswer);
+        secondaryCharText.textContent = writingAnswers;
+        console.log('. * nice! * .');
+        charInput.value = "";
+        setTimeout(() => {
+            loadWritingQuiz();
+            secretMessage.textContent = '';
+        }, 2800);
+    } else {
+        secretMessage.textContent = 'try again.';
+        charInput.value = "";
+        setTimeout(() => {
+            secretMessage.textContent = '';
+        }, 1500);
+    }
+}
+function loadWritingQuiz2() {
+    clearAll();
+    loadNouns();
+    removeAllChildren(wbuttBox);
+    charInput.value = "";
+    writeBox.classList.remove('hidden');
+    randoNumber = Math.floor(Math.random() * wordsArray.length);
+    konoKanji = wordsArray[randoNumber];
+    writingAnswers = kanaArray[randoNumber] + " - " + meaningsArray[randoNumber];
+    mainCharText.textContent = konoKanji;
+    mainCharText.classList.remove('cursive');
+    secondaryCharText.textContent = "";
+    let answersArray = [];
+    trueAnswer = wordsArray[randoNumber];
+    answersArray.push(trueAnswer);
+    // charInput.focus();
+    subButt.removeEventListener('click', handleAnswerClick2);
+    subButt.addEventListener('click', handleAnswerClick3);
+    subButt.classList.add('butt')
+    subButt.classList.add('dark')
+    wskipButt.classList.add('butt')
+    wskipButt.classList.add('dark')
+    wskipButt.removeEventListener('click', loadWritingQuiz);
+    wskipButt.addEventListener('click', loadWritingQuiz2);
+
+}
+function handleAnswerClick3() {
+    selectedAnswer = charInput.value;
+    console.log("ANSWER IS: ", selectedAnswer);
+    if (selectedAnswer == trueAnswer) {
+        secretMessage.textContent = '. * nice! * .';
+        mainCharText.append(" = ", selectedAnswer);
+        secondaryCharText.textContent = writingAnswers;
+        console.log('. * nice! * .');
+        charInput.value = "";
+        setTimeout(() => {
+            loadWritingQuiz2();
+            secretMessage.textContent = '';
+        }, 2800);
+    } else {
+        secretMessage.textContent = 'try again.';
+        charInput.value = "";
+        setTimeout(() => {
+            secretMessage.textContent = '';
+        }, 1500);
+    }
 }
 
 //menu funtions

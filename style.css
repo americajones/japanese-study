@@ -338,6 +338,9 @@ input {
   font-weight: 300;
   font-size: 28px;
 }
+.dark {
+    background-color: #1c2548;
+}
 .padding {
   padding: 1em;
 }
