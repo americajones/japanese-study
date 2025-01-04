@@ -2323,6 +2323,10 @@ nuWordList = {
         "kana": "たかい",
         "meaning": "high, tall",
     },
+    "子供": {
+        "kana": "こども",
+        "meaning": "child",
+    },
     "そう": {
         "kana": "そう",
         "meaning": "so, that way",

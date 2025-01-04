@@ -227,11 +227,14 @@ function loadWordzFlashcards() {
         let infoBox = document.createElement('div');
         let kanjiBoxTit = document.createElement('h1');
         let kanjiBoxTit2 = document.createElement('h2');
+        let boxNo = document.createElement('h6');
+        boxNo.textContent = index + 1;
         kanjiBoxTit.textContent = mainKanji;
         kanjiBoxTit2.textContent = kana;
         kanjiBox.classList.add('Flashcards');
         infoBox.classList.add('infoBox');
         wordBox.append(translation);
+        kanjiBox.append(boxNo);
         infoBox.append(wordBox);
         kanjiBox.append(kanjiBoxTit, kanjiBoxTit2);
         kanjiBox.append(infoBox);
