@@ -604,7 +604,7 @@ function loadWordzFamiliQuiz() {
     clearAll();
     loadWordz();
     pageHeader.textContent = "";
-    pageHeader.textContent = "basic nouns";
+    pageHeader.textContent = "words";
     makeButtons(loadWordzFamiliQuizSwap, loadWordzFamiliQuiz);
     konoKanji = wordsArray[initNumber];
     mainCharText.textContent = konoKanji;
@@ -636,7 +636,7 @@ function loadWordzFamiliQuizSwap() {
     clearAll();
     loadWordz();
     pageHeader.textContent = "";
-    pageHeader.textContent = "basic nouns";
+    pageHeader.textContent = "words";
     makeButtons(loadWordzFamiliQuiz, loadWordzFamiliQuizSwap);
     konoKanji = meaningsArray[initNumber];
     mainCharText.textContent = konoKanji;
@@ -668,7 +668,7 @@ function loadWordzMeaningsQuiz() {
     clearAll();
     loadWordz();
     pageHeader.textContent = "";
-    pageHeader.textContent = "basic nouns";
+    pageHeader.textContent = "words";
     makeButtons(loadWordzMeaningsQuizSwap, loadWordzMeaningsQuiz);
     randoNumber = Math.floor(Math.random() * wordsArray.length);
     konoKanji = wordsArray[randoNumber];
@@ -697,7 +697,7 @@ function loadWordzMeaningsQuizSwap() {
     clearAll();
     loadWordz();
     pageHeader.textContent = "";
-    pageHeader.textContent = "basic nouns";
+    pageHeader.textContent = "words";
     makeButtons(loadWordzMeaningsQuiz, loadWordzMeaningsQuizSwap);
     randoNumber = Math.floor(Math.random() * wordsArray.length);
     konoKanji = meaningsArray[randoNumber];
@@ -727,7 +727,7 @@ function loadWordzReadingQuiz() {
     clearAll();
     loadWordz();
     pageHeader.textContent = "";
-    pageHeader.textContent = "basic nouns";
+    pageHeader.textContent = "words";
     makeButtons(loadWordzReadingQuizSwap, loadWordzReadingQuiz);
     randoNumber = Math.floor(Math.random() * wordsArray.length);
     konoKanji = wordsArray[randoNumber];
@@ -756,7 +756,7 @@ function loadWordzReadingQuizSwap() {
     clearAll();
     loadWordz();
     pageHeader.textContent = "";
-    pageHeader.textContent = "basic nouns";
+    pageHeader.textContent = "words";
     makeButtons(loadWordzReadingQuiz, loadWordzReadingQuizSwap);
     randoNumber = Math.floor(Math.random() * wordsArray.length);
     konoKanji = kanaArray[randoNumber];
