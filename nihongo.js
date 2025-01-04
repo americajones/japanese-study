@@ -2205,3 +2205,126 @@ genkiWordList = [
     { "Kana": "そんな〜", "Kanji": "", "Meaning": "such ...; that kind of ...", "Lesson": 23 },
     { "Kana": "ものすごく", "Kanji": "", "Meaning": "extremely", "Lesson": 23 }
 ]
+
+nuWordList = {
+    "行く": {
+        "kana": "いく",
+        "meaning": "go",
+    },
+    "見る": {
+        "kana": "みる",
+        "meaning": "see, look at",
+    },
+    "多い": {
+        "kana": "おおい",
+        "meaning": "a lot of, many",
+    },
+    "家": {
+        "kana": "いえ",
+        "meaning": "home, household",
+    },
+    "これ": {
+        "kana": "これ",
+        "meaning": "this, this one",
+    },
+    "それ": {
+        "kana": "それ",
+        "meaning": "that, that one",
+    },
+    "私": {
+        "kana": "わたし",
+        "meaning": "I",
+    },
+    "仕事": {
+        "kana": "しごと",
+        "meaning": "work, job",
+    },
+    "いつ": {
+        "kana": "いつ",
+        "meaning": "when",
+    },
+    "する": {
+        "kana": "する",
+        "meaning": "do, make",
+    },
+    "出る": {
+        "kana": "でる",
+        "meaning": "go out, leave",
+    },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+    // "": {
+    //     "kana": "",
+    //     "meaning": "",
+    // },
+//     "": {
+//         "kana": "",
+//         "meaning": "",
+//     },
+// }

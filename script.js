@@ -117,6 +117,13 @@ function loadNouns() {
         kanaArray.push(value.kana);
     };
 }
+function loadWordz() {
+    for (var [word, value] of Object.entries(nuWordList)) {
+        wordsArray.push(word);
+        meaningsArray.push(value.meaning);
+        kanaArray.push(value.kana);
+    };
+}
 function loadGenkiWords() {
     genkiWordList.forEach(function (word) {
         let thisword;
@@ -562,6 +569,188 @@ function loadWordsReadingQuizSwap() {
         newDiv.textContent = answer;
         newDiv.addEventListener('click', (e) => {
             handleAnswerClick(loadWordsReadingQuizSwap, e, 1000)
+        })
+        newDiv.classList.add('answer');
+        newDiv.classList.add('med');
+        answersBox.append(newDiv);
+    });
+}
+function loadWordzFamiliQuiz() {
+    clearAll();
+    clearAll();
+    loadWordz();
+    pageHeader.textContent = "";
+    pageHeader.textContent = "basic nouns";
+    makeButtons(loadWordzFamiliQuizSwap, loadWordzFamiliQuiz);
+    konoKanji = wordsArray[initNumber];
+    mainCharText.textContent = konoKanji;
+    secondaryCharText.textContent = kanaArray[initNumber];
+    let answersArray = [];
+    trueAnswer = meaningsArray[initNumber];
+    answersArray.push(trueAnswer);
+    if (initNumber === wordsArray.length - 1) {
+        initNumber = 0;
+    } else initNumber++;
+    for (let i = 0; i < 8; i++) {
+        let nuRandoNum = Math.floor(Math.random() * wordsArray.length);
+        let randoAnswer = meaningsArray[nuRandoNum];
+        answersArray.push(randoAnswer);
+    }
+    shuffleArray(answersArray);
+    answersArray.forEach(answer => {
+        let newDiv = document.createElement('div');
+        newDiv.textContent = answer;
+        newDiv.addEventListener('click', (e) => {
+            handleAnswerClick(loadWordzFamiliQuiz, e, 1000)
+        })
+        newDiv.classList.add('answer');
+        answersBox.append(newDiv);
+    });
+}
+function loadWordzFamiliQuizSwap() {
+    clearAll();
+    clearAll();
+    loadWordz();
+    pageHeader.textContent = "";
+    pageHeader.textContent = "basic nouns";
+    makeButtons(loadWordzFamiliQuiz, loadWordzFamiliQuizSwap);
+    konoKanji = meaningsArray[initNumber];
+    mainCharText.textContent = konoKanji;
+    secondaryCharText.textContent = kanaArray[initNumber];
+    let answersArray = [];
+    trueAnswer = wordsArray[initNumber];
+    answersArray.push(trueAnswer);
+    if (initNumber === wordsArray.length - 1) {
+        initNumber = 0;
+    } else initNumber++;
+    for (let i = 0; i < 8; i++) {
+        let nuRandoNum = Math.floor(Math.random() * wordsArray.length);
+        let randoAnswer = wordsArray[nuRandoNum];
+        answersArray.push(randoAnswer);
+    }
+    shuffleArray(answersArray);
+    answersArray.forEach(answer => {
+        let newDiv = document.createElement('div');
+        newDiv.textContent = answer;
+        newDiv.addEventListener('click', (e) => {
+            handleAnswerClick(loadWordzFamiliQuizSwap, e, 1000)
+        })
+        newDiv.classList.add('answer');
+        newDiv.classList.add('med');
+        answersBox.append(newDiv);
+    });
+}
+function loadWordzMeaningsQuiz() {
+    clearAll();
+    loadWordz();
+    pageHeader.textContent = "";
+    pageHeader.textContent = "basic nouns";
+    makeButtons(loadWordzMeaningsQuizSwap, loadWordzMeaningsQuiz);
+    randoNumber = Math.floor(Math.random() * wordsArray.length);
+    konoKanji = wordsArray[randoNumber];
+    mainCharText.textContent = konoKanji;
+    secondaryCharText.textContent = kanaArray[randoNumber];
+    let answersArray = [];
+    trueAnswer = meaningsArray[randoNumber];
+    answersArray.push(trueAnswer);
+    for (let i = 0; i < 8; i++) {
+        let nuRandoNum = Math.floor(Math.random() * wordsArray.length);
+        let randoAnswer = meaningsArray[nuRandoNum];
+        answersArray.push(randoAnswer);
+    }
+    shuffleArray(answersArray);
+    answersArray.forEach(answer => {
+        let newDiv = document.createElement('div');
+        newDiv.textContent = answer;
+        newDiv.addEventListener('click', (e) => {
+            handleAnswerClick(loadWordzMeaningsQuiz, e, 1000)
+        })
+        newDiv.classList.add('answer');
+        answersBox.append(newDiv);
+    });
+}
+function loadWordzMeaningsQuizSwap() {
+    clearAll();
+    loadWordz();
+    pageHeader.textContent = "";
+    pageHeader.textContent = "basic nouns";
+    makeButtons(loadWordzMeaningsQuiz, loadWordzMeaningsQuizSwap);
+    randoNumber = Math.floor(Math.random() * wordsArray.length);
+    konoKanji = meaningsArray[randoNumber];
+    mainCharText.textContent = konoKanji;
+    secondaryCharText.textContent = kanaArray[randoNumber];
+    let answersArray = [];
+    trueAnswer = wordsArray[randoNumber];
+    answersArray.push(trueAnswer);
+    for (let i = 0; i < 8; i++) {
+        let nuRandoNum = Math.floor(Math.random() * wordsArray.length);
+        let randoAnswer = wordsArray[nuRandoNum];
+        answersArray.push(randoAnswer);
+    }
+    shuffleArray(answersArray);
+    answersArray.forEach(answer => {
+        let newDiv = document.createElement('div');
+        newDiv.textContent = answer;
+        newDiv.addEventListener('click', (e) => {
+            handleAnswerClick(loadWordzMeaningsQuizSwap, e, 1000)
+        })
+        newDiv.classList.add('answer');
+        newDiv.classList.add('med');
+        answersBox.append(newDiv);
+    });
+}
+function loadWordzReadingQuiz() {
+    clearAll();
+    loadWordz();
+    pageHeader.textContent = "";
+    pageHeader.textContent = "basic nouns";
+    makeButtons(loadWordzReadingQuizSwap, loadWordzReadingQuiz);
+    randoNumber = Math.floor(Math.random() * wordsArray.length);
+    konoKanji = wordsArray[randoNumber];
+    mainCharText.textContent = konoKanji;
+    let answersArray = [];
+    trueAnswer = kanaArray[randoNumber];
+    answersArray.push(trueAnswer);
+    for (let i = 0; i < 8; i++) {
+        let nuRandoNum = Math.floor(Math.random() * wordsArray.length);
+        let randoAnswer = kanaArray[nuRandoNum];
+        answersArray.push(randoAnswer);
+    }
+    shuffleArray(answersArray);
+    answersArray.forEach(answer => {
+        let newDiv = document.createElement('div');
+        newDiv.textContent = answer;
+        newDiv.addEventListener('click', (e) => {
+            handleAnswerClick(loadWordzReadingQuiz, e, 1000)
+        })
+        newDiv.classList.add('answer');
+        newDiv.classList.add('med');
+        answersBox.append(newDiv);
+    });
+}
+function loadWordzReadingQuizSwap() {
+    clearAll();
+    loadWordz();
+    pageHeader.textContent = "";
+    pageHeader.textContent = "basic nouns";
+    makeButtons(loadWordzReadingQuiz, loadWordzReadingQuizSwap);
+    randoNumber = Math.floor(Math.random() * wordsArray.length);
+    konoKanji = kanaArray[randoNumber];
+    mainCharText.textContent = konoKanji;
+    let answersArray = [];
+    trueAnswer = wordsArray[randoNumber];
+    answersArray.push(trueAnswer);
+    for (let i = 0; i < 8; i++) {
+        let nuRandoNum = Math.floor(Math.random() * wordsArray.length);
+        let randoAnswer = wordsArray[nuRandoNum];
+        answersArray.push(randoAnswer);
+    }
+    shuffleArray(answersArray);
+    answersArray.forEach(answer => {
+        let newDiv = document.createElement('div');
+        newDiv.textContent = answer;
+        newDiv.addEventListener('click', (e) => {
+            handleAnswerClick(loadWordzReadingQuizSwap, e, 1000)
         })
         newDiv.classList.add('answer');
         newDiv.classList.add('med');
