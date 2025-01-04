@@ -214,6 +214,30 @@ function loadGenkiFlashcards() {
         flashBox.append(kanjiBox);
     });
 }
+function loadWordzFlashcards() {
+    clearAll();
+    quizStudyBox.classList.add('hidden');
+    loadWordz();
+    wordsArray.forEach((word, index) => {
+        let mainKanji = word;
+        let translation = meaningsArray[index];
+        let kana = kanaArray[index];
+        let kanjiBox = document.createElement('div');
+        let wordBox = document.createElement('div');
+        let infoBox = document.createElement('div');
+        let kanjiBoxTit = document.createElement('h1');
+        let kanjiBoxTit2 = document.createElement('h2');
+        kanjiBoxTit.textContent = mainKanji;
+        kanjiBoxTit2.textContent = kana;
+        kanjiBox.classList.add('Flashcards');
+        infoBox.classList.add('infoBox');
+        wordBox.append(translation);
+        infoBox.append(wordBox);
+        kanjiBox.append(kanjiBoxTit, kanjiBoxTit2);
+        kanjiBox.append(infoBox);
+        flashBox.append(kanjiBox);
+    });
+}
 // quiz functions
 function loadHiraganaQuiz() {
     clearAll();

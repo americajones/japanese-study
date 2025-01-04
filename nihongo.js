@@ -2251,80 +2251,200 @@ nuWordList = {
         "kana": "でる",
         "meaning": "go out, leave",
     },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
+    "使う": {
+        "kana": "つかう",
+        "meaning": "use, make use of",
+    },
+    "所": {
+        "kana": "ところ",
+        "meaning": "place",
+    },
+    "作る": {
+        "kana": "つくる",
+        "meaning": "make, create",
+    },
+    "思う": {
+        "kana": "おもう",
+        "meaning": "think",
+    },
+    "持つ": {
+        "kana": "もつ",
+        "meaning": "have, possess",
+    },
+    "買う": {
+        "kana": "かう",
+        "meaning": "buy",
+    },
+    "時間": {
+        "kana": "じかん",
+        "meaning": "time, hour",
+    },
+    "知る": {
+        "kana": "しる",
+        "meaning": "know",
+    },
+    "同じ": {
+        "kana": "おなじ",
+        "meaning": "same, identical",
+    },
+    "今": {
+        "kana": "いま",
+        "meaning": "now",
+    },
+    "新しい": {
+        "kana": "あたらしい",
+        "meaning": "new",
+    },
+    "なる": {
+        "kana": "なる",
+        "meaning": "become",
+    },
+    "まだ": {
+        "kana": "まだ",
+        "meaning": "(not) yet, still",
+    },
+    "あと": {
+        "kana": "あと",
+        "meaning": "after",
+    },
+    "聞く": {
+        "kana": "きく",
+        "meaning": "hear, ask",
+    },
+    "言う": {
+        "kana": "いう",
+        "meaning": "say, tell",
+    },
+    "少ない": {
+        "kana": "すくない",
+        "meaning": "few, little",
+    },
+    "高い": {
+        "kana": "たかい",
+        "meaning": "high, tall",
+    },
+    "そう": {
+        "kana": "そう",
+        "meaning": "so, that way",
+    },
+    "もう": {
+        "kana": "もう",
+        "meaning": "already, yet",
+    },
+    "学生": {
+        "kana": "がくせい",
+        "meaning": "student",
+    },
+    "熱い": {
+        "kana": "あつい",
+        "meaning": "hot (to touch)",
+    },
+    "どうぞ": {
+        "kana": "どうぞ",
+        "meaning": "please",
+    },
+    "午後": {
+        "kana": "ごご",
+        "meaning": "afternoon, p.m.",
+    },
+    "長い": {
+        "kana": "ながい",
+        "meaning": "long",
+    },
+    "本": {
+        "kana": "ほん",
+        "meaning": "book, volume",
+    },
+    "今年": {
+        "kana": "ことし",
+        "meaning": "this year (colloquial)",
+    },
+    "よく": {
+        "kana": "よく",
+        "meaning": "often, well",
+    },
+    // "彼女": {
+    // "kana": "かのじょ",
+    //     "meaning": "she, one’s girlfriend",
+    // },
+    // "どう": {
+    //     "kana": "どう",
+    //     "meaning": "how, what",
+    // },
+    // "言葉": {
+    //     "kana": "ことば",
+    //     "meaning": "word, language",
+    // },
+    // "顔": {
+    //     "kana": "かお",
+    //     "meaning": "face",
+    // },
+    // "終わる": {
+    //     "kana": "おわる",
+    //     "meaning": "finish, end",
+    // },
+    // "一つ": {
+    //     "kana": "ひとつ",
+    //     "meaning": "one (thing)",
+    // },
+    // "あげる": {
+    //     "kana": "あげる",
+    //     "meaning": "give, offer (colloquial)",
+    // },
+    // "こう": {
+    //     "kana": "こう",
+    //     "meaning": "like this, such",
+    // },
+    // "学校": {
+    //     "kana": "がっこう",
+    //     "meaning": "school",
+    // },
+    // "くれる": {
+    //     "kana": "くれる",
+    //     "meaning": "be given",
+    // },
+    // "始める": {
+    //     "kana": "はじめる",
+    //     "meaning": "start (something)",
+    // },
+    // "起きる": {
+    //     "kana": "おきる",
+    //     "meaning": "get up, get out of bed",
+    // },
+    // "春": {
+    //     "kana": "はる",
+    //     "meaning": "spring",
+    // },
+    // "午前": {
+    //     "kana": "ごぜん",
+    //     "meaning": "morning, a.m.",
+    // },
+    // "別": {
+    //     "kana": "べつ",
+    //     "meaning": "another, different",
+    // },
+    // "どこ": {
+    //     "kana": "どこ",
+    //     "meaning": "where",
+    // },
+    // "部屋": {
+    //     "kana": "へや",
+    //     "meaning": "room",
+    // },
+    // "若い": {
+    //     "kana": "わかい",
+    //     "meaning": "young",
+    // },
+    // "車": {
+    //     "kana": "くるま",
+    //     "meaning": "car, automobile",
+    // },
+    // "置く": {
+    //     "kana": "おく",
+    //     "meaning": "put, place",
     // },
     // "": {
     //     "kana": "",
     //     "meaning": "",
     // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    // "": {
-    //     "kana": "",
-    //     "meaning": "",
-    // },
-    //     "": {
-    //         "kana": "",
-    //         "meaning": "",
-    //     },
 }
